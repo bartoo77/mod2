@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+p {
+  width: 90%;
+}
+
+.duze {
+  border: 1px solid black;
+  background-color: lightgray;
+  position: relative;
+  color: white;
+  height: 150px;
+  margin: 5px;
+}
+
+.male {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+}
+
+@media (min-width: 996px) {
+  .duzemedia {
+    float: left;
+    width: 32.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+  .sredniemedia {
+    float: left;
+    width: 48%;
+  }
+
+  .sredniemedia:nth-child(3n) {
+    clear: both;
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 767px) {
+  .malemedia {
+    width: 100%;
+  }
+}
